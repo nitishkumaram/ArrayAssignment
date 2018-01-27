@@ -17,7 +17,7 @@ public class SumOfNumberOfArray {
 		int sizeOfArray = inputSize.nextInt();
 		
 		// generate array
-		int getArray[]=acceptArrayElements(sizeOfArray);
+		int getArray[]=acceptArrayElements(sizeOfArray);	//??
 		
 		//display array
 		displayArrayElements(getArray);
@@ -27,7 +27,7 @@ public class SumOfNumberOfArray {
 		inputSize.close();
 	}
 	
-	public static int[] acceptArrayElements(int num){
+	public static int[] acceptArrayElements(int num){		//why we are defining (int num) ??
 		
 		int arrayOfNumber[] = new int[num];
 		
@@ -35,8 +35,8 @@ public class SumOfNumberOfArray {
 			System.out.println("Enter Element: ");
 			Scanner inputNumber= new Scanner(System.in);
 			for(int limit=0; limit<num; limit++){
-				System.out.println("Enter the number at "+ (limit+1) + "place :- ");
-				arrayOfNumber[limit] = inputNumber.nextInt();
+				System.out.println("Enter the number at "+ (limit+1) + " place :- ");
+				arrayOfNumber[limit] = inputNumber.nextInt();	//??
 			}
 			inputNumber.close();
 		}catch(InputMismatchException e){
