@@ -27,7 +27,7 @@ public class SumOfNumberOfArray {
 		inputSize.close();
 	}
 	
-	public static int acceptArrayElements(int num){
+	public static int[] acceptArrayElements(int num){
 		
 		int arrayOfNumber[] = new int[num];
 		
